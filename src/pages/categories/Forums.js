@@ -34,7 +34,9 @@ const ReviewForum = () => {
 
   useEffect(() => {
     const fetchWorkouts = async () => {
-      const response = await fetch("http://localhost:4000/api/items/");
+      const response = await fetch(
+        "https://shop-oline-api-production.up.railway.app/api/items/"
+      );
 
       const json = await response.json();
 
@@ -71,7 +73,7 @@ const ReviewForum = () => {
   // useEffect(() => {
   //   const fetchWorkouts = async () => {
   //     const response = await fetch(
-  //       "http://localhost:4000/api/reviews/getuserreviews"
+  //       "https://shop-oline-api-production.up.railway.app/api/reviews/getuserreviews"
   //     );
   //     const json = await response.json();
 
@@ -163,7 +165,9 @@ export default ReviewForum;
 
 // data loader
 export const ReviewForumPageLoader = async ({}) => {
-  const res = await fetch("http://localhost:4000/api/reviews/getuserreviews");
+  const res = await fetch(
+    "https://shop-oline-api-production.up.railway.app/api/reviews/getuserreviews"
+  );
 
   if (!res.ok) {
     throw Error("Could not find reviews");
@@ -181,7 +185,7 @@ export const ReviewForumAction = async ({ request }) => {
   };
 
   const datas = await axios.post(
-    "http://localhost:4000/api/reviews/addreview",
+    "https://shop-oline-api-production.up.railway.app/api/reviews/addreview",
     {
       reviewdetails,
     },

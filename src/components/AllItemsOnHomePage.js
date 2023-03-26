@@ -208,7 +208,12 @@ const AllItemsOnMainPage = (props) => {
                   src={require(`./../img/products/${item.image}`)}
                   alt="imageos"
                 ></img>
-                <a href={"http://localhost:3000/" + item._id}>
+                <a
+                  href={
+                    "https://shop-online-frontend-production.up.railway.app/" +
+                    item._id
+                  }
+                >
                   <h4 className="name">
                     {item.title} {/* can be big and in the center */}{" "}
                   </h4>

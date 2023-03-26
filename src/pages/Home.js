@@ -24,7 +24,9 @@ const Home = () => {
 
   useEffect(() => {
     const fetchItems = async () => {
-      const response = await fetch("http://localhost:4000/api/items/");
+      const response = await fetch(
+        "https://shop-oline-api-production.up.railway.app/api/items/"
+      );
 
       const json = await response.json();
 
@@ -41,7 +43,7 @@ const Home = () => {
       const checkToken = async () => {
         try {
           const datas = await axios.post(
-            "http://localhost:4000/api/users/checktoken",
+            "https://shop-oline-api-production.up.railway.app/api/users/checktoken",
             {
               message: "checkme",
             },
@@ -91,7 +93,7 @@ const Home = () => {
 export default Home;
 
 // export const allItemLoader = async () => {
-//   const res = await fetch("http://localhost:4000/api/items/");
+//   const res = await fetch("https://shop-oline-api-production.up.railway.app/api/items/");
 
 //   return res.json();
 // };
