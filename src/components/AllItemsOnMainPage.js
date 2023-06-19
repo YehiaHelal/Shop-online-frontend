@@ -210,8 +210,7 @@ const AllItemsOnMainPage = (props) => {
                 ></img>
                 <a
                   href={
-                    "https://shop-online-frontend-production.up.railway.app/" +
-                    item._id
+                    "https://shop-online-frontend-ten.vercel.app/" + item._id
                   }
                 >
                   <h4 className="name">

@@ -1,5 +1,5 @@
 {
-  "proxy": "https://shop-oline-api-production.up.railway.app",
+  "proxy": "https://shopapi-e2ti.onrender.com",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,

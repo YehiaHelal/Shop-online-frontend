@@ -17,7 +17,7 @@ export default function RootLayout() {
   const LogoutFunctionHandler = async () => {
     // fetch request and if ok the cookie will be removed
     const datas = await axios.post(
-      "https://shop-oline-api-production.up.railway.app/api/users/logout",
+      "https://shopapi-e2ti.onrender.com/api/users/logout",
       {},
       {
         withCredentials: true,
@@ -139,8 +139,7 @@ export default function RootLayout() {
               className="search-button"
               to={
                 searchedNameobject
-                  ? "https://shop-online-frontend-production.up.railway.app/" +
-                    id
+                  ? "https://shop-online-frontend-ten.vercel.app/" + id
                   : ""
               }
               onClick={() => {

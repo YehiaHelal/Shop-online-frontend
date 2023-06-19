@@ -12,7 +12,7 @@ const Pants = () => {
   useEffect(() => {
     const fetchWorkouts = async () => {
       const response = await fetch(
-        "https://shop-oline-api-production.up.railway.app/api/items/"
+        "https://shopapi-e2ti.onrender.com/api/items/"
       );
       const json = await response.json();
 

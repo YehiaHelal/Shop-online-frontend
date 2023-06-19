@@ -18,7 +18,7 @@ export default function Profile() {
 
   async function handlegetpastorders() {
     const res = await axios.post(
-      "https://shop-oline-api-production.up.railway.app/api/orders/getuserorders",
+      "https://shopapi-e2ti.onrender.com/api/orders/getuserorders",
       { message: "hello" },
       {
         withCredentials: true,
@@ -109,7 +109,7 @@ export default function Profile() {
 
 export const ProfileLoader = async ({}) => {
   const res = await axios.post(
-    "https://shop-oline-api-production.up.railway.app/api/users/profile",
+    "https://shopapi-e2ti.onrender.com/api/users/profile",
     { message: "hello" },
     {
       withCredentials: true,
@@ -137,7 +137,7 @@ export const ProfileAction = async ({ request }) => {
   };
 
   const datas = await axios.post(
-    "https://shop-oline-api-production.up.railway.app/api/users/updateinfo",
+    "https://shopapi-e2ti.onrender.com/api/users/updateinfo",
     {
       submission,
     },

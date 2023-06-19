@@ -122,7 +122,7 @@ export const LoginAction = async ({ request }) => {
 
   try {
     const datas = await axios.post(
-      "https://shop-oline-api-production.up.railway.app/api/users/login",
+      "https://shopapi-e2ti.onrender.com/api/users/login",
       {
         submission,
       },
@@ -158,7 +158,7 @@ export const LoginAction = async ({ request }) => {
 // );
 
 // const sendingRequest = async () => {
-//   const response = await fetch("https://shop-oline-api-production.up.railway.app/api/users/");
+//   const response = await fetch("https://shopapi-e2ti.onrender.com/api/users/");
 
 //   const json = await response.json();
 

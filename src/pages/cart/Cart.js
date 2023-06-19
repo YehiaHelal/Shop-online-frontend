@@ -148,7 +148,7 @@ const Cart = () => {
   const BookingFunctionHandler = async () => {
     // fetch request and if ok the cookie will be removed
     const response = await axios.post(
-      "https://shop-oline-api-production.up.railway.app/api/orders/cartorder",
+      "https://shopapi-e2ti.onrender.com/api/orders/cartorder",
       { OrderDetails },
       {
         withCredentials: true,
@@ -191,7 +191,7 @@ const Cart = () => {
                     ></img>
                     <a
                       href={
-                        "https://shop-online-frontend-production.up.railway.app/" +
+                        "https://shop-online-frontend-ten.vercel.app/" +
                         item._id
                       }
                     >
