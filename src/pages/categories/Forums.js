@@ -35,7 +35,7 @@ const ReviewForum = () => {
   useEffect(() => {
     const fetchWorkouts = async () => {
       const response = await fetch(
-        "https://shopapi-e2ti.onrender.com/api/items/"
+        "https://www.rshopbk.shoponlinemarket.cloud/api/items/"
       );
 
       const json = await response.json();
@@ -73,7 +73,7 @@ const ReviewForum = () => {
   // useEffect(() => {
   //   const fetchWorkouts = async () => {
   //     const response = await fetch(
-  //       "https://shopapi-e2ti.onrender.com/api/reviews/getuserreviews"
+  //       "https://www.rshopbk.shoponlinemarket.cloud/api/reviews/getuserreviews"
   //     );
   //     const json = await response.json();
 
@@ -166,7 +166,7 @@ export default ReviewForum;
 // data loader
 export const ReviewForumPageLoader = async ({}) => {
   const res = await fetch(
-    "https://shopapi-e2ti.onrender.com/api/reviews/getuserreviews"
+    "https://www.rshopbk.shoponlinemarket.cloud/api/reviews/getuserreviews"
   );
 
   if (!res.ok) {
@@ -185,7 +185,7 @@ export const ReviewForumAction = async ({ request }) => {
   };
 
   const datas = await axios.post(
-    "https://shopapi-e2ti.onrender.com/api/reviews/addreview",
+    "https://www.rshopbk.shoponlinemarket.cloud/api/reviews/addreview",
     {
       reviewdetails,
     },

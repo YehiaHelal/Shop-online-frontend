@@ -17,7 +17,7 @@ export default function RootLayout() {
   const LogoutFunctionHandler = async () => {
     // fetch request and if ok the cookie will be removed
     const datas = await axios.post(
-      "https://shopapi-e2ti.onrender.com/api/users/logout",
+      "https://www.rshopbk.shoponlinemarket.cloud/api/users/logout",
       {},
       {
         withCredentials: true,

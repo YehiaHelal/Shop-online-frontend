@@ -122,7 +122,7 @@ export const LoginAction = async ({ request }) => {
 
   try {
     const datas = await axios.post(
-      "https://shopapi-e2ti.onrender.com/api/users/login",
+      "https://www.rshopbk.shoponlinemarket.cloud/api/users/login",
       {
         submission,
       },
@@ -158,7 +158,7 @@ export const LoginAction = async ({ request }) => {
 // );
 
 // const sendingRequest = async () => {
-//   const response = await fetch("https://shopapi-e2ti.onrender.com/api/users/");
+//   const response = await fetch("https://www.rshopbk.shoponlinemarket.cloud/api/users/");
 
 //   const json = await response.json();
 

@@ -115,7 +115,7 @@ export const SignupAction = async ({ request }) => {
   // const dataaa = async () => {
   try {
     const datas = await axios.post(
-      `https://shopapi-e2ti.onrender.com/api/users/signup/`,
+      `https://www.rshopbk.shoponlinemarket.cloud/api/users/signup/`,
       { submission },
       {
         withCredentials: true,
@@ -138,7 +138,7 @@ export const SignupAction = async ({ request }) => {
 };
 
 // const response = await axios({
-//   url: "https://shopapi-e2ti.onrender.com/api/users/signup/",
+//   url: "https://www.rshopbk.shoponlinemarket.cloud/api/users/signup/",
 //   method: "POST",
 //   body: { submission },
 // headers: {
@@ -146,7 +146,7 @@ export const SignupAction = async ({ request }) => {
 // },
 // });
 
-// const response = await fetch("https://shopapi-e2ti.onrender.com/api/users/signup/", {
+// const response = await fetch("https://www.rshopbk.shoponlinemarket.cloud/api/users/signup/", {
 //   method: "POST",
 //   body: JSON.stringify(submission),
 //   headers: {
@@ -172,7 +172,7 @@ export const SignupAction = async ({ request }) => {
 // );
 
 // const sendingRequest = async () => {
-//   const response = await fetch("https://shopapi-e2ti.onrender.com/api/users/");
+//   const response = await fetch("https://www.rshopbk.shoponlinemarket.cloud/api/users/");
 
 //   const json = await response.json();
 

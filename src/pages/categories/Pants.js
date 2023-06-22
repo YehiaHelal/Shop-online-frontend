@@ -12,7 +12,7 @@ const Pants = () => {
   useEffect(() => {
     const fetchWorkouts = async () => {
       const response = await fetch(
-        "https://shopapi-e2ti.onrender.com/api/items/"
+        "https://www.rshopbk.shoponlinemarket.cloud/api/items/"
       );
       const json = await response.json();
 

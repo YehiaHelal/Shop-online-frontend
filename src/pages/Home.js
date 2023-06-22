@@ -19,7 +19,6 @@ const Home = () => {
   const [slidingThirtyOfferItems, setSlidingThirtyOfferItems] = useState(1);
   const [showAlertNotifcation, setshowAlertNotifcation] = useState(true);
 
-
   // const categoryItemToShow = allItems.slice(0, 40);
 
   // const firstTen = allItems.slice(0, 10);
@@ -27,7 +26,7 @@ const Home = () => {
   useEffect(() => {
     const fetchItems = async () => {
       const response = await fetch(
-        "https://shopapi-e2ti.onrender.com/api/items/"
+        "https://www.rshopbk.shoponlinemarket.cloud/api/items/"
       );
 
       const json = await response.json();
@@ -55,7 +54,7 @@ const Home = () => {
       const checkToken = async () => {
         try {
           const datas = await axios.post(
-            "https://shopapi-e2ti.onrender.com/api/users/checktoken",
+            "https://www.rshopbk.shoponlinemarket.cloud/api/users/checktoken",
             {
               message: "checkme",
             },
@@ -105,7 +104,7 @@ const Home = () => {
 export default Home;
 
 // export const allItemLoader = async () => {
-//   const res = await fetch("https://shopapi-e2ti.onrender.com/api/items/");
+//   const res = await fetch("https://www.rshopbk.shoponlinemarket.cloud/api/items/");
 
 //   return res.json();
 // };
