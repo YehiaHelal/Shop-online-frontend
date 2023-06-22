@@ -17,7 +17,7 @@ const Home = () => {
   const { user, dispatchUser } = useAuthContext();
   const [slidingImagesOffer, setSlidingImagesOffer] = useState(1);
   const [slidingThirtyOfferItems, setSlidingThirtyOfferItems] = useState(1);
-  const [showAlertNotifcation, setshowAlertNotifcation] = useState(true);
+  // const [showAlertNotifcation, setshowAlertNotifcation] = useState(true);
 
   // const categoryItemToShow = allItems.slice(0, 40);
 
@@ -39,15 +39,15 @@ const Home = () => {
     fetchItems();
   }, [dispatcho]);
 
-  useEffect(() => {
-    if (showAlertNotifcation) {
-      alert(
-        "Hello! ,Please wait 30 seconds for the Backend/Database server to start working again (because it's a free hosting after 15min of inactivity it stops working)"
-      );
+  // useEffect(() => {
+  //   if (showAlertNotifcation) {
+  //     alert(
+  //       "Hello! ,Please wait 30 seconds for the Backend/Database server to start working again (because it's a free hosting after 15min of inactivity it stops working)"
+  //     );
 
-      setshowAlertNotifcation(false);
-    }
-  }, [dispatcho]);
+  //     setshowAlertNotifcation(false);
+  //   }
+  // }, [dispatcho]);
 
   useEffect(() => {
     if (user) {
